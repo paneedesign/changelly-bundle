@@ -1,0 +1,9 @@
+parameters:
+    ped_changelly.endpoint: "https://api.changelly.com"
+    ped_changelly.api_key: ""
+    ped_changelly.api_secret: ""
+
+services:
+    ped_changelly.handler:
+        class: PaneeDesign\ChangellyBundle\Handler\PedChangellyBundleHandler
+        arguments: ["%ped_changelly.endpoint%", "%ped_changelly.api_key%", "%ped_changelly.api_secret%"]
